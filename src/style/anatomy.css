@@ -111,7 +111,7 @@
 @media (max-width: 767px) {
   .anatomy-container {
     width: 180px;
-    margin: 0 auto;
+    margin-left: -25px;
   }
   .anatomy-image {
     height: 300px;
