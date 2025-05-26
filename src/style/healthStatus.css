@@ -101,7 +101,7 @@
 
 @media (max-width: 767px) {
   .status-card {
-    margin-left: 0;
+   margin-left: -20px;
     gap: 10px;
   }
   .status {
