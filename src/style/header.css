@@ -1,0 +1,176 @@
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #e3d4fc;
+  height: 98vh;
+  padding: 5px;
+  width: 200px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+  .menu-toggle {
+  display: none;
+}
+
+.header-logo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  margin-top: 60px;
+  font-family: sans-serif;
+}
+.header-logo .logo-1 {
+  color: #1ebcff;
+}
+
+.header-logo .logo-2 {
+  color: #2f217e;
+}
+.navBar-1 h3,
+.navBar-2 h3 {
+  color: #505558;
+  font-family: sans-serif;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+.navBar-1 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navBar-1 nav a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  padding: 14px 0;
+  transition: all 0.2s ease-in-out;
+  color: #505558;
+  
+}
+
+.navBar-2 nav a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  padding: 14px 0;
+  color: #505558;
+  transition: all 0.3s ease-in-out;
+  margin-right: 30px;
+}
+
+.setting a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  padding: 14px 0;
+  color: #505558;
+  margin-right: 30px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 70px;
+}
+
+.icon1{
+  font-size: 1.2rem;
+}
+
+.navBar-1 a:hover,.navBar-2 a:hover,.setting a:hover{
+  color: #1ebcff;
+  transform: translateX(2px);
+}
+
+
+
+@media (max-width: 767px) {
+    .header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    background: #e3d4fc;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+   .header.active {
+    display: flex;
+  }
+
+
+  .header-logo h1 {
+    font-size: 1.5rem;
+    margin: 20px 0 40px;
+  }
+
+  .header-logo h1 .logo-2 {
+    display: inline;
+  }
+
+  .navBar-1, .navBar-2 {
+    width: 100%;
+  }
+
+  .navBar-1 h3,
+  .navBar-2 h3 {
+    display: block;
+    font-size: 1rem;
+    margin: 20px 0 10px;
+  }
+
+  .navBar-1 nav a,
+  .navBar-2 nav a {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navBar-1 nav a span,
+  .navBar-2 nav a span {
+    display: block;
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  .setting {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .setting a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .setting a span {
+    display: block;
+    margin-left: 15px;
+  }
+    .menu-toggle {
+    display: flex;
+    position: static;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    background: #2f217e;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+  }
+
+}

@@ -1,0 +1,189 @@
+.appointments {
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.appointments-header {
+  margin-bottom: 1.5rem;
+}
+
+.appointments-header h2 {
+  color: #2f217e;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.appointments-header p {
+  color: #505558;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.day-label{
+  color: #505558;
+  font-weight: 300;
+}
+
+.appointment {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.appointment-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: #e3d4fc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  width: 280px;
+  cursor: pointer;
+}
+
+.appointment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: #2f217e;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.name {
+  font-weight: 600;
+  color: #2f217e;
+  font-size: 1.1rem;
+}
+
+.time {
+  color: #505558;
+  font-size: 0.9rem;
+}
+
+.doctor {
+  color: #2f217e;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Hover effects */
+.appointment-item:hover {
+  transform: translateY(-3px);
+  background: #2f217e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.appointment-item:hover .name,
+.appointment-item:hover .time,
+.appointment-item:hover .doctor {
+  color: #e3d4fc;
+}
+
+.appointment-item:hover .appointment-icon {
+  background: rgba(227, 212, 252, 0.2);
+  color: #e3d4fc;
+}
+
+
+
+@media (max-width: 1100px) {
+  .appointment {
+    gap: 1rem;
+  }
+  .appointment-item {
+    width: 260px;
+  }
+}
+
+@media (max-width: 990px) {
+  .appointment {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  .appointment-item {
+    min-width: 240px;
+  }.appointment::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .appointment::-webkit-scrollbar-thumb {
+    background: #d3bdfa;
+    border-radius: 4px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .appointments {
+    padding: 0.6rem;
+  }
+  
+  .appointments-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .appointment {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .appointment::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .appointment::-webkit-scrollbar-thumb {
+    background: #d3bdfa;
+    border-radius: 4px;
+  }
+
+  .appointment-item {
+    min-width: 240px;
+    flex-shrink: 0;
+  }
+
+  .day-label {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .appointments-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .appointment-item {
+    min-width: 220px;
+    padding: 0.8rem;
+  }
+
+  .appointment-icon {
+    min-width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .time, .doctor {
+    font-size: 0.8rem;
+  }
+}

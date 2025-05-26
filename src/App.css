@@ -1,0 +1,53 @@
+body {
+  background-color: #e3d4fc;
+  font-family: sans-serif;
+}
+
+.card {
+  background-color: white;
+  min-height: 95vh;
+  border-radius: 20px;
+  padding: 10px;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    padding: 12px;
+  }
+  section {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 10px;
+  }
+  section {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 5px;
+  }
+}

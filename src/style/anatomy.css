@@ -1,0 +1,122 @@
+.anatomy {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.anatomy-container {
+  position: relative;
+  width: 250px;
+  top: -40px;
+}
+.anatomy-image:hover{
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.anatomy-image {
+  background-color: #e3d4fc;
+  width: 100%;
+  height: 400px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.anatomy-image img {
+  height: 350px;
+  width: auto;
+  object-fit: contain;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: #2f217e;
+  z-index: 2;
+}
+
+
+
+.heart, .leg {
+  position: absolute;
+  width: 150px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.heart {
+  background-color: #1ebcff;
+  color: rgb(255, 255, 255);
+  right: -75px;
+  top: 30%;
+}
+
+.leg {
+  background-color: #2f217e;
+  color: white;
+  left: -15px;
+  bottom:20%;
+}
+
+.status {
+  margin-left: auto;
+}
+.heart-icon{
+  color: red;
+
+}
+.leg-icon{
+  color:wheat
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+  .anatomy-container {
+    width: 220px;
+  }
+  .anatomy-image {
+    height: 350px;
+  }
+  .anatomy-image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 990px) {
+  .anatomy-container {
+    width: 200px;
+  }
+  .heart, .leg {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .anatomy-container {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .anatomy-image {
+    height: 300px;
+  }
+  .anatomy-image img {
+    height: 250px;
+  }
+}
